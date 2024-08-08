@@ -1,0 +1,50 @@
+body,
+html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f8f9fa;
+}
+
+header, footer {
+    background-color: purple;
+}
+.blink {
+    animation: blinker 1.5s linear infinite;
+}
+
+@keyframes blinker {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+}
+
+.card {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    border-radius: 25px;
+    /* Adds rounded corners to the cards */
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+    border-top-left-radius: 15px;
+    /* Rounds the top-left corner of the image */
+    border-top-right-radius: 15px;
+    /* Rounds the top-right corner of the image */
+}
+
+footer {
+    flex-shrink: 0;
+}
